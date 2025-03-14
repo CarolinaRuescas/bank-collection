@@ -8,6 +8,9 @@ import lombok.Data;
 public class Account {
     private String iban;
     private String nif;
-    private int balance;
+    private double balance;
 
+    public void deposit(double amount){
+        balance += amount;
+    }
 }
